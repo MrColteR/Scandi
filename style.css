@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-image: url("background.png");
+    height: 750px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar_el {
+    list-style: none;
+    border-bottom: 2px solid transparent;
+    margin-top: 30px;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #533738;
+}
+
+.logo {
+    list-style: none;
+    border-bottom: 2px solid transparent;
+    margin-top: 30px;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #533738
+}
+
+.number {
+    list-style: none;
+    border-bottom: 2px solid transparent;
+    margin-top: 30px;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #533738
+}
+
+a {
+    text-decoration: none;
+    color: #533738;
+}
+
+li:hover {
+    transform: scale(1.05);
+    border-bottom: 1px solid #533738;
+}
+
+.info{
+    height: 400px;
+    padding-top: 100px;
+    padding-left: 250px;
+}
+
+h1 {
+    margin-top: 0%;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 68px;
+    color: #533738
+}
+
+p {
+    margin-top: 0%;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 38px;
+    color: #533738
+}
+
+
+.navbtn{
+    margin-top: 10px;
+    height: 60px;
+    width: 270px;
+    border: 0px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #CC8B86;
+    color: black
+}
+
+.navbtn:hover {
+    border: 2px solid black
+}
+
+.aboutUs {
+    height: 750px;
+    background-color: #efe6e4;
+}
+
+.aboutUsHead {
+    margin: 0%;
+    margin-left: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #533738
+}
+
+.aboutUsContent {
+    display: flex;
+    justify-content: center;
+}
+
+.imgAboutUs {
+    height: 550px;
+    width: 450px;
+    padding-right: 20px;
+    margin-left: 10px;
+    background-color: black;
+}
+
+.textAboutUs{
+    height: 550px;
+    width: 600px;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+.achievements {
+    height: 220px;
+    background-color: #8D7370;
+    justify-content: space-around;
+    padding: auto;
+}
+
+.achievementsBlock {
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    padding: 50px;  
+}
+
+.achievementsText {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+
+.ourWorks {
+    display: flex;
+    flex-direction: column;
+    height: 1400px;
+    background-color: #efe6e4;
+}
+
+.ourWorksHead{
+    margin: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #533738
+}
+
+.ourWorksBlock {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.text{
+    height: 450px;
+    width: 480px;
+    margin: 0 10px 20px 10px;
+    background-color: blue;
+}
+
+.img1 {
+    height: 450px;
+    width: 690px;
+    margin: 0 10px 20px 10px;
+    background-color: rosybrown;
+}
+
+.img2 {
+    height: 450px;
+    width: 690px;
+    margin: 0 10px 10px 10px;
+    background-color: royalblue;
+}
+
+.img3 {
+    height: 450px;
+    width: 480px;
+    margin: 0 10px 10px 10px;
+    background-color: red;
+}
+
+.ourWorkbtn {
+    margin: 10px auto;
+    height: 60px;
+    width: 270px;
+    border: 0px;
+    background-color: seagreen;
+}
