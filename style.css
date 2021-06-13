@@ -230,13 +230,16 @@ p {
 .imgTeam {
     height: 250px;
     width: 320px;
+    margin: 0%;
 }
 
 .textImgTeam {
     margin-top: 10px;
+    text-align: left;
+    line-height: normal;
     height: 250px;
     width: 320px;
-    background-color: teal;
+
 }
 
 .howWeWork {
@@ -306,6 +309,7 @@ p {
     border-radius: 50%;
     grid-column: 1;
     grid-row: 1 / span 3;
+    text-align: center;
     align-self: center;
     justify-self:flex-end;
     background-color: #CC8B86;
@@ -317,6 +321,7 @@ p {
     margin: 0 10px; 
     border-radius: 50%;
     grid-column: 4;
+    text-align: center;
     align-self: center;
     justify-self: flex-start;
     grid-row: 1 / span 3;
@@ -334,27 +339,25 @@ p {
 
 .imgReviewsUp {
     height: 240px;
-    width: 400px;
+    width: 360px;
     margin-bottom: 10px;
     grid-column: 3;
     align-self: center;
     grid-row-start: 1 / span 2;
-    background-color: blue;
 }
 
 .imgReviewsDown {
     height: 240px;
-    width: 400px;
+    width: 360px;
     margin-bottom: 0;
     margin-top: 10px;
     grid-column: 3;
     align-self: center;
     grid-row: 3 span 4;
-    background-color: blue;
 }
 
 .textReviews {
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
     line-height: 0.4;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -434,9 +437,8 @@ p {
 }
 
 .map {
-    padding: 20px;
     background-color: red;
-    height: 500px;
+    height: 580px;
     width: 600px;
 }
 
