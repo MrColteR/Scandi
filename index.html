@@ -125,7 +125,9 @@
                     <p><input class="applicationPress" type="submit" value="Оставить заявку"></p>
                 </form>
             </div>
-            <div id="map"></div>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2171.6739452944116!2d40.944812316125144!3d57.022887900787794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d15b9daf4efe5%3A0xd0a01ba70e128d5e!2z0YPQuy4g0KHQvNC-0LvRjNC90LDRjywgONCwLCDQmNCy0LDQvdC-0LLQviwg0JjQstCw0L3QvtCy0YHQutCw0Y8g0L7QsdC7LiwgMTUzMDI1!5e0!3m2!1sru!2sru!4v1606649863028!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe> 
+            </div>
         </div>
     </section>
     <footer>
@@ -133,27 +135,23 @@
         <p class="footerText">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
         <p class="footerText">ИП Королёва А.А.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <!-- Display the map -->
+    <!-- Google Maps Script -->  
     <script>
-        // Initialize and add the map
-        function initMap() {
-          // The location of Uluru
-          const uluru = { lat: -25.344, lng: 131.036 };
-          // The map, centered at Uluru
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: uluru,
-          });
-          // The marker, positioned at Uluru
-          const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-          });
-        }
-      </script>
-       <script
-       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-       async
-     ></script>
+    function myMap() {
+        let mapCanvas = document.getElementById("map");
+        let mapOptions = {
+            center: new google.maps.LatLng(51.5, -0.2),
+            zoom: 10
+        };
+        let map = new google.maps.Map(mapCanvas, mapOptions);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 
 </html>
