@@ -56,13 +56,13 @@
     <section class="ourWorks" id="ourWorks">
         <h2 class="ourWorksHead">НАШИ РАБОТЫ</h2>
         <div class="ourWorksBlock">
-            <p class="text"> </p>
+            <p class="text" height="450px" width="480px"><img src="imgText.jpg" alt=""></p>
             <p class="img1" height="450px" width="690px"><img src="img1.jpg" alt=""></p>
             <p class="img2" height="450px" width="480px"><img src="img2.jpg" alt=""></p>
             <p class="img3" height="450px" width="480px"><img src="img3.jpg" alt=""></p>
         </div>
         <button class="ourWorkbtn">
-            Смотреть еще
+            Смотреть еще&nbsp;&mdash;&mdash;&gt;
         </button>
     </section>
     <section class="team" id="team">
@@ -98,7 +98,7 @@
     <section class="reviews" id="reviews">
         <h2 class="reviewsHead">ОТЗЫВЫ</h2>
         <div class="reviewsBlock">
-            <p class="btnReviewsLeft"><a href="#reviews">&lt;</a></p>
+            <p class="btnReviewsLeft"><a class="btn" href="#reviews">&lt;</a></p>
             <p class="textReviewsBlock">
                 <span class="textReviews">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию
                     для украшения своего дома.
@@ -109,7 +109,7 @@
             </p>
             <p class="imgReviewsUp"><img src="imgReviewsUp.jpg" alt="" height="250px"></p>
             <p class="imgReviewsDown"><img src="imgReviewsDown.jpg" alt="" height="250px"></p>
-            <p class="btnReviewsRight"><a href="#reviews">&gt;</a></p>
+            <p class="btnReviewsRight"><a class="btn" href="#reviews">&gt;</a></p>
         </div>
     </section>
     <section class="sumbitApplication" id="sumbitApplication">
@@ -122,10 +122,10 @@
                     <p><input class="applicationInput" type="text" placeholder="Введите имя"></p>
                     <p><input class="applicationInput" type="tel" name="phone" id="phone" placeholder="Введите телефон">
                     </p>
-                    <p><input class="applicationPress" type="submit" value="Отправить"></p>
+                    <p><input class="applicationPress" type="submit" value="Оставить заявку"></p>
                 </form>
             </div>
-            <p class="map"></p>
+            <div id="map"></div>
         </div>
     </section>
     <footer>
@@ -133,6 +133,27 @@
         <p class="footerText">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
         <p class="footerText">ИП Королёва А.А.</p>
     </footer>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const uluru = { lat: -25.344, lng: 131.036 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }
+      </script>
+       <script
+       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+       async
+     ></script>
 </body>
 
 </html>
